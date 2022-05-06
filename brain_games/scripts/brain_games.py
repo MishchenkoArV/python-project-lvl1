@@ -7,12 +7,13 @@ import prompt
 
 from brain_games.games.brain_calc import brain_calc
 from brain_games.games.brain_even import brain_even
+from brain_games.games.brain_gcd import brain_gcd
 
 
 def main():
     # Game settings
     MAX_SCORE = 3
-    MAX_RAND = 25
+    MAX_RAND = 99
     MIN_RAND = 1
 
     # Welcome masage
@@ -26,6 +27,7 @@ def main():
             Games
     1. Is number even?
     2. What is the result?
+    3. What's commom about this numbers?
     """
     print(games) 
 
@@ -39,6 +41,8 @@ def main():
             correct = brain_even(MIN_RAND, MAX_RAND)
         elif game == '2':
             correct = brain_calc(MIN_RAND, MAX_RAND)
+        elif game == '3':
+            correct = brain_gcd(MIN_RAND, MAX_RAND)
         else:
             print('That game doesn\'t exist!')
             return 0
