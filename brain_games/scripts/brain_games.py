@@ -9,6 +9,7 @@ from brain_games.games.brain_calc import brain_calc
 from brain_games.games.brain_even import brain_even
 from brain_games.games.brain_gcd import brain_gcd
 from brain_games.games.brain_progression import brain_prog
+from brain_games.games.brain_prime import brain_prime
 
 
 def main():
@@ -30,6 +31,7 @@ def main():
     2. What is the result?
     3. What's commom about this numbers?
     4. What did we miss?
+    5. Is it prime?
     """
     print(games) 
 
@@ -47,6 +49,8 @@ def main():
             correct = brain_gcd(MIN_RAND, MAX_RAND)
         elif game == '4':
             correct = brain_prog(MIN_RAND, MAX_RAND)
+        elif game == '5':
+            correct = brain_prime(MIN_RAND, MAX_RAND)
         else:
             print('That game doesn\'t exist!')
             return 0
