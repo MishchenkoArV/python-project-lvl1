@@ -8,6 +8,7 @@ import prompt
 from brain_games.games.brain_calc import brain_calc
 from brain_games.games.brain_even import brain_even
 from brain_games.games.brain_gcd import brain_gcd
+from brain_games.games.brain_progression import brain_prog
 
 
 def main():
@@ -28,6 +29,7 @@ def main():
     1. Is number even?
     2. What is the result?
     3. What's commom about this numbers?
+    4. What did we miss?
     """
     print(games) 
 
@@ -43,6 +45,8 @@ def main():
             correct = brain_calc(MIN_RAND, MAX_RAND)
         elif game == '3':
             correct = brain_gcd(MIN_RAND, MAX_RAND)
+        elif game == '4':
+            correct = brain_prog(MIN_RAND, MAX_RAND)
         else:
             print('That game doesn\'t exist!')
             return 0
