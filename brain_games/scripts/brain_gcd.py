@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 """
 Brain-GCD game loic.
 ...
@@ -18,11 +19,11 @@ print(f'Hello, {name}!')
 def main():
     # Print the rules
     print('Find the greatest commom divisor of given numbers.')
-    
+
     # Game settings
     MAX_SCORE = 3   # Number of rounds to win
     MAX_RAND = 50   # Maximum number for randon number generator
-    MIN_RAND = 1 
+    MIN_RAND = 1
 
     score = 0
     while score < MAX_SCORE:
@@ -36,7 +37,7 @@ def main():
                 break
             count -= 1
         print(f'Question: {num_1} {num_2}')
-        
+
         answer = prompt.string('Your answer: ')
 
         # If answer is correct
@@ -49,10 +50,11 @@ def main():
  Correct answer was '{correct}'")
             print(f'Let\'s try again, {name}!')
             return 0
-            
-     # If player wins
+
+    # If player wins
     print(f'Congratulations, {name}!')
     return 0
+
 
 if __name__ == '__main__':
     main()

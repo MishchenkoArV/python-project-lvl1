@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 """
 Brain-calc game logic.
 ...
@@ -36,8 +37,8 @@ def main():
         if operation == '*':
             correct = num_1 * num_2
 
-        print(f'Question: {num_1} {operation} {num_2}') 
-        
+        print(f'Question: {num_1} {operation} {num_2}')
+
         answer = prompt.string('Your answer: ')
 
         # If answer is correct
@@ -50,10 +51,11 @@ def main():
  Correct answer was '{correct}'")
             print(f'Let\'s try again, {name}!')
             return 0
-            
-     # If player wins
+
+    # If player wins
     print(f'Congratulations, {name}!')
     return 0
+
 
 if __name__ == '__main__':
     main()

@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 """
 Brain-even game logic.
 ...
@@ -21,8 +22,8 @@ def main():
     # Game settings
     MAX_SCORE = 3   # Number of rounds to win
     MAX_RAND = 50   # Maximum number for randon number generator
-    MIN_RAND = 1   
-    
+    MIN_RAND = 1
+
     score = 0
     while score < MAX_SCORE:
         # Generate question
