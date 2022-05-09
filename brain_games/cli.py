@@ -8,7 +8,6 @@ MIN_RAND = 1    # Mininum number for randon number generator
 
 
 def welcome_user():
-    # Welcome masage
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
@@ -31,9 +30,8 @@ def is_correct(answer, correct, name):
     if answer == str(correct):
         print('Correct!')
         return True
-    # If answer is wrong
     else:
-        print(f"\n'{answer}' is wrong answer ;(.\
-Correct answer was '{correct}'")
+        print(f"\n'{answer}' is wrong answer ;(. \
+Correct answer was '{correct}'.")
         print(f'Let\'s try again, {name}!')
         return False
